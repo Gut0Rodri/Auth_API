@@ -1,0 +1,146 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1757602714468
+  modified: 1757602714468
+  description: ""
+collection:
+  - url: "{{ _.base_url.base_url }}/user/Fulano_"
+    name: Find User By Username
+    meta:
+      id: req_8a14314abfba40f1bc2e85f76c88124b
+      created: 1764607713614
+      modified: 1764688567755
+      isPrivate: false
+      description: ""
+      sortKey: -1764607713614
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url.base_url }}/user"
+    name: Create User
+    meta:
+      id: req_1fdd46a3d6a4493d8bcf2f5d728c9c8c
+      created: 1764607774145
+      modified: 1764688524134
+      isPrivate: false
+      description: ""
+      sortKey: -1764607713564
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Fulano",
+        	"username": "Fulano_",
+        	"password": "1234567890"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url.base_url }}/user/login"
+    name: Login
+    meta:
+      id: req_04fabce252fb41cc892518131b7a96d6
+      created: 1764617507454
+      modified: 1764688668962
+      isPrivate: false
+      description: ""
+      sortKey: -1764607713551.5
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "Fulano_",
+        	"password": "1234567890"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url.base_url }}/user/Fulano_"
+    name: Update Password
+    meta:
+      id: req_9ad128052fcb4cfb853c9012f0b1b21d
+      created: 1764617517201
+      modified: 1764688675656
+      isPrivate: false
+      description: ""
+      sortKey: -1764607713539
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"password": "1234567890"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1757602761381
+    modified: 1757602761381
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1757602761373
+    modified: 1764607734015
+    isPrivate: false
+  data:
+    base_url:
+      base_url: localhost:3000
+    token:
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imd1dDBSb2RyaSIsInVzZXJfaWQiOjEsImlhdCI6MTc1ODEzNzU2NywiZXhwIjoxNzU4MTQxMTY3fQ.A3ptvm0oqusoxUfqW-l_jpf5164MT-S1nc2nG1ojE40
