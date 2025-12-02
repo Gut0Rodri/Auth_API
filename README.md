@@ -92,7 +92,7 @@ JWT_SECRET=sua_chave_jwt
    npx nodemon
    ```
 
-9. Servidor rodará em:
+9. Servidor disponível em:
    ```arduino
    http://localhost:3000
    ```
