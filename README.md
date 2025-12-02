@@ -60,33 +60,39 @@ JWT_SECRET=sua_chave_jwt
    ```
 2. Abra o projeto em qualquer editor de código (VS Code, WebStorm, etc.)
 
-3. Instale as dependências
+3. Entre na pasta `API`
+
+   ```bash
+   cd API
+   ```
+
+4. Instale as dependências
 
    ```nginx
    npm install
    ```
 
-4. Entre na pasta `source`
+5. Entre na pasta `source`
 
    ```bash
    cd source
    ```
 
-5. Criar manualmente o banco de dados no PostgreSQL
+6. Criar manualmente o banco de dados no PostgreSQL
 
-6. Executar script para criar tabela users no banco de dados
+7. Executar script para criar tabela users no banco de dados
 
    ```nginx
    node initDB.js
    ```
 
-7. Rodar o servidor com nodemon
+8. Rodar o servidor com nodemon
 
    ```nginx
    npx nodemon
    ```
 
-8. Servidor rodará em:
+9. Servidor rodará em:
    ```arduino
    http://localhost:3000
    ```
@@ -227,7 +233,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 Os testes dos endpoints da API foram realizados utilizando a ferramenta Insomnia, garantindo a validação das rotas, métodos, parâmetros e respostas retornadas pelo servidor.
 
-**[Baixar arquivo de testes (Insomnia)](./test_insomnia/Insomnia_2025-12-02.yaml)**
+**[Baixar arquivo de testes (Insomnia)](./API/test_insomnia/Insomnia_2025-12-02.yaml)**
 
 
 ### 📄 Licença
