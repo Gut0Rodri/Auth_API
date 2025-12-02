@@ -12,7 +12,6 @@ Desenvolvido com foco em estudo e boas práticas de APIs REST.
 - Bcrypt
 - JsonWebToken
 - Dotenv
-- Cors
 
 ## 🗄 Pré-requisitos
 
@@ -227,7 +226,6 @@ CREATE TABLE IF NOT EXISTS users (
 - Senhas são hasheadas com bcrypt (10 salt rounds).
 - JWT utiliza assinatura segura (HS256).
 - Sem dados sensíveis retornados nas respostas.
-- CORS habilitado.
 
 ### 🧪 Testes de Endpoints
 
